@@ -1,0 +1,17 @@
+backend:
+  name: test-repo
+  repo: fahadsaleemfd/cms
+  branch: master
+
+media_folder: static/assets
+public_folder: /assets
+
+collections:
+  - name: blog
+    label: bblog
+    folder: src/pages/md
+    create: true
+    fields:
+      - { name: date, label: Date, widget: datetime }
+      - { name: title, label: Title }
+      
